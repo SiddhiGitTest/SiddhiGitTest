@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" thread-count="2"  parallel="tests" preserve-order="true">
+    <test name="MakeMyTrip-WIN">
+        <parameter name="browser" value="Chrome"></parameter>
+        <parameter name="browser_version" value="100.0"></parameter>
+        <parameter name="os" value="Windows"></parameter>
+        <parameter name="os_version" value="10"></parameter>
+
+        <classes>
+            <class name="MakeMyTrip"></class>
+        </classes>
+    </test>
+
+   <!-- <test name="MakeMyTrip-Mac">
+        <parameter name="browser" value="Chrome"></parameter>
+        <parameter name="browser_version" value="100.0"></parameter>
+        <parameter name="os" value="OS X"></parameter>
+        <parameter name="os_version" value="Catalina"></parameter>
+
+        <classes>
+            <class name="MakeMyTrip"></class>
+        </classes>
+    </test>
+-->
+</suite>
