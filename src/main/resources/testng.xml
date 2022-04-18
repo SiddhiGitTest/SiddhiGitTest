@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" thread-count="3"  parallel="tests" preserve-order="true">
+
+    <!--======================================================-->
+    <test name="AmazonShopping-Chrome">
+        <parameter name="browser" value="Chrome"></parameter>
+        <parameter name="browser_version" value="100.0"></parameter>
+        <parameter name="os" value="Windows"></parameter>
+        <parameter name="os_version" value="10"></parameter>
+
+        <classes>
+            <class name="amazonTest.amazonProductSearch"></class>
+        </classes>
+    </test>
+    <!--======================================================-->
+
+    <!--======================================================-->
+    <test name="AmazonShopping-Firefox">
+        <parameter name="browser" value="firefox"></parameter>
+        <parameter name="browser_version" value="99.0"></parameter>
+        <parameter name="os" value="Windows"></parameter>
+        <parameter name="os_version" value="10"></parameter>
+
+        <classes>
+            <class name="amazonTest.amazonProductSearch"></class>
+        </classes>
+    </test>
+    <!--======================================================-->
+
+    <!--======================================================-->
+    <test name="AmazonShopping-ie">
+        <parameter name="browser" value="ie"></parameter>
+        <parameter name="browser_version" value="11.0"></parameter>
+        <parameter name="os" value="Windows"></parameter>
+        <parameter name="os_version" value="10"></parameter>
+
+        <classes>
+            <class name="amazonTest.amazonProductSearch"></class>
+        </classes>
+    </test>
+    <!--======================================================-->
+
+</suite>
